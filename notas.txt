@@ -1,0 +1,19 @@
+- Paquetes a nesesarios
+    - npm install express --save
+        - npm install express --no-save
+    - sudo npm install express-generator -g
+    - express --view=ejs
+
+    - npm install mysql
+    - npm install express-myconnection
+
+    - npm install mongodb
+
+    - npm install morgan
+
+    - npm install
+
+    - npm install path
+
+    - npm install node-fetch --save
+    - npm install form-data
