@@ -1,0 +1,10 @@
+- Font: combinaciones
+    - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_font_pair_folb
+    - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_font_pair_afp
+
+    - Haches (h1...)
+        - https://www.w3schools.com/howto/tryit.asp?font=Alfa%20Slab%20One
+        - https://www.w3schools.com/howto/tryit.asp?font=Anton
+        - https://www.w3schools.com/howto/tryit.asp?font=Bevan
+        - https://www.w3schools.com/howto/tryit.asp?font=Bowlby%20One
+        - https://www.w3schools.com/howto/tryit.asp?font=Dela%20Gothic%20One

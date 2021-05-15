@@ -1,0 +1,3 @@
+- Mostrar PDF
+- Utilizar mode-blend de CSS
+- Diseño con capas
