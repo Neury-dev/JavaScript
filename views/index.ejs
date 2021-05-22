@@ -15,19 +15,30 @@
 -->
 <section class="area-1">  
     <header>
-        <h1><%= title %></h1>
-        <p>Welcome to <%= title %></p>
-        <ul class="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Pictures</a></li>
-            <li><a href="#" class="p">Hello World</a>
+        <section>
+            <h1><%= title %></h1>
+            <p>Welcome to <%= title %></p>
+        </section>
+        <section>
+            <ul class="nav">
+                <li><a href="#">Home</a>
+                    <div class="overlay">
+                        <div class="text">Home</div>
+                    </div>
+                </li>
+                <li><a href="#">Pictures</a>
+                    <div class="overlay">
+                        <div class="text">Pictures</div>
+                    </div>
+                </li>
+                <li><a href="#" class="p">Hello World</a>
                     <div class="overlay">
                         <div class="text">Hello World</div>
                     </div>
-                
-            </li>
-            <li>Italy</li>
-        </ul>
+                </li>
+                <li>Italy</li>
+            </ul>
+        </section>
     </header>
 </section>
 <!--

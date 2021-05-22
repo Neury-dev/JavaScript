@@ -2,9 +2,8 @@
     Created on : 21 may. 2021, 6:28:57 p. m.
     Author     : neury-dev
 */
-/*
-    Maquetado
-*/
+/* Maquetado
+-------------------------------------------------------------------------------*/
 body {
     background-color: var(--n-color-dos);
 }
@@ -24,8 +23,17 @@ body {
 .n-grid > .area-3 { grid-area: 3 / span 2 / 4 / 3; }
 .n-grid > .area-4 { grid-area: 3 / span 2 / 4 / 5; }
 .n-grid > .area-5 { grid-area: 4 / span 4 / 5 / 5; }
+/* Areas
+--------------------------------------------------------------------------------*/
+/* header
+--------------------------------------------------------------------------------*/
+.n-grid > .area-1 > header {
+    display: flex;
+    align-content: space-between;
+    width: 100%;
+}
 ul.nav {
-  padding: 10px 16px;
+  /*padding: 10px 16px;*/
   list-style: none;
   background-color: #eee;
 }
@@ -44,7 +52,6 @@ ul.nav li {
 ul.nav li a {
     position: relative;
   color: #0275d8;
-  text-decoration: none;
 }
 
 .overlay {
@@ -60,7 +67,7 @@ ul.nav li a {
 }
 ul.nav li:hover .overlay {
 overflow: visible;
-  animation: h2 4s ease-in-out 2 alternate forwards;
+  animation: h2 2s ease-in-out 2 alternate forwards;
 }
 @keyframes h2 {
   0%   {clip: rect(0px,0px,200px,0px);}
@@ -73,7 +80,7 @@ overflow: visible;
 ul.nav li:hover .p {
  
 animation-name: p;
-    animation-duration: 4.50s;
+    animation-duration: 2.50s;
     animation-fill-mode: forwards;
 }
 @keyframes p {
@@ -90,7 +97,3 @@ animation-name: p;
   
 
 }
-/*ul.nav li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-}*/
