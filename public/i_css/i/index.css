@@ -23,77 +23,85 @@ body {
 .n-grid > .area-3 { grid-area: 3 / span 2 / 4 / 3; }
 .n-grid > .area-4 { grid-area: 3 / span 2 / 4 / 5; }
 .n-grid > .area-5 { grid-area: 4 / span 4 / 5 / 5; }
-/* Areas
---------------------------------------------------------------------------------*/
 /* header
 --------------------------------------------------------------------------------*/
 .n-grid > .area-1 > header {
     display: flex;
-    align-content: space-between;
-    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.50em 3em 1.50em 3em;
 }
-ul.nav {
-  /*padding: 10px 16px;*/
-  list-style: none;
-  background-color: #eee;
+.n-grid > .area-1 > header {
+    border: 0.10em solid var(--n-color);
 }
-ul.nav li {
-  display: inline;
-  /*font-size: 18px;*/
+.n-grid > .area-1 > header > section > * { margin: 0; }
+.n-grid > .area-1 > header > :nth-child(1) {
+    border: 0.10em solid var(--n-color);
 }
-ul.nav li+li:before {
-/*  padding: 8px;*/
-  color: black;
-  content: "/\00a0";
+.n-grid > .area-1 > header > section > h1 {
+    font-family: 'Anton';
+    /*font-weight: bold;*/
+    font-size: 2.50em;
 }
-ul.nav li {
+.n-grid > .area-1 > header > :nth-child(2) {
+/*    border: 0.10em solid var(--n-color);*/
+    display: flex;
+    align-items: flex-end;
+}
+.n-grid > .area-1 > header > section > ul {
+    list-style: none;
+    padding: 0;
+}
+.n-grid > .area-1 > header > section > ul > :nth-child(1) {
+    padding-left: 0.70em;
+}
+.n-grid > .area-1 > header > section > ul > li {
+    display: inline;
+    font-weight: bold;
+}
+.n-grid > .area-1 > header > section > ul > li+li:before {
+    color: var(--n-color-tres);
+    content: "/\00a0";
+}
+.n-grid > .area-1 > header > section > ul > li {
     position: relative;
 }
-ul.nav li a {
+.n-grid > .area-1 > header > section > ul > li > a {
     position: relative;
-  color: #0275d8;
+    color: var(--n-color);
 }
 
-.overlay {
-  position: absolute;
-  bottom: 1.20em;
-  left: 0.70em;
-  right: 0;
-
-  overflow: hidden;
-  /*width: auto;*/
-  height: 0;
-  transition: 2.5s ease;
+.n-grid > .area-1 > header > section > ul >  li > .cubrir {
+    position: absolute;
+    left: 0.70em;
+    bottom: 1.20em;
+    overflow: hidden;
+    height: 0;
 }
-ul.nav li:hover .overlay {
-overflow: visible;
-  animation: h2 2s ease-in-out 2 alternate forwards;
+.n-grid > .area-1 > header > section > ul >  li > .cubrir > .con {
+    color: var(--n-color-tres);
 }
-@keyframes h2 {
-  0%   {clip: rect(0px,0px,200px,0px);}
-  25%  {clip: rect(0px,25px,200px,0px);}
-  50%  {clip: rect(0px,50px,200px,0px);}
-  75%  {clip: rect(0px,75px,200px,0px);}
-  100% {clip: rect(0px,100px,200px,0px);}
+.n-grid > .area-1 > header > section > ul > li:hover 
+.cubrir {
+    overflow: visible;
+    animation: cubrir 1s ease-in-out 2 alternate forwards;
 }
-
-ul.nav li:hover .p {
- 
-animation-name: p;
-    animation-duration: 2.50s;
-    animation-fill-mode: forwards;
-}
-@keyframes p {
- 	0%   {opacity: 0.75}
-  25%  {opacity: 0.50}
-  50%  {opacity: 0.25}
-  75%  {opacity: 0.00;}
-  
-  100% { color: red;}
+@keyframes cubrir {
+    0%   { clip: rect(0px, 0px, 200px, 0px);   }
+    25%  { clip: rect(0px, 25px, 200px, 0px);  }
+    50%  { clip: rect(0px, 50px, 200px, 0px);  }
+    75%  { clip: rect(0px, 75px, 200px, 0px);  }
+    100% { clip: rect(0px, 100px, 200px, 0px); }
 }
 
-.text {
-  color: red;
-  
-
+.n-grid > .area-1 > header > section > ul > li:hover
+.enlace { 
+    animation: enlace 1.00s forwards; 
+}
+@keyframes enlace {
+    0%   { opacity: 0.75;               }
+    25%  { opacity: 0.50;               }
+    50%  { opacity: 0.25;               }
+    75%  { opacity: 0.00;               }
+    100% { color: var(--n-color-tres);  }
 }

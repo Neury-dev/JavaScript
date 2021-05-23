@@ -29,7 +29,11 @@ input,
 textArea { 
     outline: none; 
 }
-
+.titulo { transform: scaleY(1.7); letter-spacing: -0.08em; }
+ /*
+    https://www.w3schools.com/cssref/tryit.asp?filename=trycss_func_cubic-bezier
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+ */
 :root {
     --n-fuente:                 "Georgia", Garamond, serif;
     --n-fuente-dos:             "Verdana", Helvetica, Tahoma, sans-serif;
