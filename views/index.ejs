@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="icon" href="i_img/i/neury-dev.jpg" type="image/jpg" sizes="16x16">
+    
     <link rel='stylesheet' href='/i_css/i/root.css' />
     <link rel='stylesheet' href='/i_css/i/index.css' />
-    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+    <!-- Iconos: JavaScript-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
 <section class="n-grid">
@@ -17,7 +19,7 @@ header
 <section class="area-1">  
     <header>
         <section>
-            <h1><%= title %></h1>
+            <h1 class="titulo"><%= title %></h1>
         </section>
         <section>
             <ul>
@@ -45,14 +47,52 @@ main
 ------------------------------------------------------------------------------->
 <section class="area-2">
     <main>
-        <h1 class="titulo" style="font-size: 1.50em;">JavaScript</h1>
+        <!--div class="folder"><i style="font-size: 20em;" class='fas fa-folder'></i></div-->
+        <!--div class="muro-1"><p class="habilidad">JavaScript</p></div-->
+        <div class="skills">
+            <h2 class="titulo">Skills</h2>
+        </div>
+   
+            <p class="titulo">HTML</p>
+            <p class="titulo">CSS</p>
+            <p class="titulo">JavaScript Full Stack</p>
+            <p class="titulo">Java Full Stack</p>
+            <p class="titulo">PHP</p>
+            <p class="titulo">SQL</p>
+            <p class="titulo">JSON</p>
+            <p class="titulo">MongoDB</p>
+            <p class="titulo">Fetch y AJAX</p>
+            <p class="titulo">ARIA</p>
+            <p class="titulo">SVG</p>
+            <p class="titulo">Apache NetBeans</p>
+      
     </main>
+    <section class="nivel">
+        <svg width="500" height="400">
+            <path d="M 0 350 l 100 -200" stroke="red" stroke-width="3" fill="none" />
+            <path d="M 100 150 q 50 -100 100 0" stroke="blue" stroke-width="5" fill="none" />
+            <path d="M 200 150 q 50 100 100 0" stroke="blue" stroke-width="5" fill="none" />
+            <path d="M 300 150 l 100 -200" stroke="red" stroke-width="3" fill="none" />
+            <!-- Mark relevant points -->
+            <g stroke="black" stroke-width="3" fill="white">
+            <circle id="pointA" cx="90" cy="350" r="6" />
+            <circle id="pointB" cx="400" cy="150" r="6" />
+            <circle id="pointC" cx="400" cy="350" r="6" />
+            </g>
+            <!-- Label the points -->
+            <!--g font-size="20" font-family="sans-serif" fill="white" stroke="none" text-anchor="middle">
+            <text x="100" y="350" dx="-30">HTML</text>
+            <text x="400" y="150" dy="-10">CSS</text>
+            <text x="400" y="350" dx="30">JavaScript</text>
+            </g-->
+            Sorry, your browser does not support inline SVG.
+        </svg>
+    </section>
 </section>
 <!------------------------------------------------------------------------------
 section
 ------------------------------------------------------------------------------->
 <section class="area-3">
-    <p class="titulo" style="font-weight: bold">JavaScript</p>
     <section class="capas">
         <div class="capa capta-1"></div>
         <div class="capa capta-2"></div>
@@ -71,7 +111,7 @@ aside
 ------------------------------------------------------------------------------->
 <section class="area-4">
     <aside>
-        <p>JavaScript</p>
+        
     </aside>
 </section>
 <!------------------------------------------------------------------------------
@@ -79,7 +119,7 @@ footer
 ------------------------------------------------------------------------------->
 <section class="area-5">
     <footer>
-        <p class="titulo">JavaScript</p>
+        
     </footer>
 </section>
 </section>

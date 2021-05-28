@@ -1,3 +1,18 @@
+- Renderizar HTML
+
 - Mostrar PDF
 - Utilizar mode-blend de CSS
 - Diseño con capas
+
+- Iconos
+    <button style='font-size:24px'>Button <i class='fas fa-folder-plus'></i></button>
+    <button style='font-size:24px'>Button <i class='far fa-folder-open'></i></button>
+    <button style='font-size:24px'>Button <i class='fas fa-folder-open'></i></button>
+    <button style='font-size:24px'>Button <i class='fas fa-folder-minus'></i></button>
+    <button style='font-size:24px'>Button <i class='far fa-folder'></i></button>
+    <button style='font-size:24px'>Button <i class='fas fa-folder'></i></button>
+
+    <i style="font-size: 20em;" class='far fa-folder'></i>
+    <i style="font-size: 20em;" class='far fa-folder-open'></i>
+    <i style="font-size: 20em;" class='fas fa-folder-open'></i>
+    <i style="font-size: 20em;" class='fas fa-folder'></i>
