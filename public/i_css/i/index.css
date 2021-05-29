@@ -137,22 +137,63 @@ body {
     font-family: var(--n-fuente);
     /*text-align: center;*/
 }
-.n-grid > .area-2 > main > .skill {
-    width: 300px;
-    height: 300px;
-    border-right: 0.10em solid var(--n-color);
-    border-radius: 50%;
-    padding: 2em 0em 0em 0em;
-    shape-outside: circle(50% at 50% 50%);
+.n-grid > .area-2 > main > .skills > div {
+    position: relative;
+    top: -60px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1));
+    border-radius: 16px;
+}
+.n-grid > .area-2 > main:hover .skills > div {
+    animation-name: linea;
+    animation-duration: 2s;  
+    animation-fill-mode: forwards;
+}
+@keyframes linea {
+    from {
+        width: 0px;
+        height: 4px;
+    } to {
+        width: 250px;
+        height: 4px;
+    }
+}
+.n-grid > .area-2 > main > .skills > p {
+    position: relative;
+    top: -163px;
+    left: 120px;
+    color: var(--n-color-dos);
+    font-size: 0.75em;
+    writing-mode: sideways-lr;
+}
+.n-grid > .area-2 > main:hover .skills > p {
+    /*top: -163px;*/
+    left: 110px;
+    color: var(--n-color);
+    font-weight: bold;
+    /*text-shadow: var(--n-sombra-de-texto);*/
+    
+    animation-name: fullStack;
+    animation-duration: 2s;  
+    animation-fill-mode: forwards;
+}
+@keyframes fullStack {
+    from {
+        transform: rotate(0deg);
+        font-size: 0.75em;
+    } to {
+        transform: rotate(90deg);
+        font-size: 1.50em;
+    }
 }
 /* Habilidades: diseño
 --------------------------------------------------------------------------------*/
-.n-grid > .area-2 > .nivel {
+.n-grid > .area-2 > .niveles {
     width: 50%;
-    border: 0.10em solid var(--n-color);
+    /*border: 0.10em solid var(--n-color);*/
 }
-
-
+.n-grid > .area-2 > .niveles > svg > g > .nivel {
+    display: none;
+}
 
 
 

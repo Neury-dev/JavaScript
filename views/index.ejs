@@ -47,44 +47,58 @@ main
 ------------------------------------------------------------------------------->
 <section class="area-2">
     <main>
-        <!--div class="folder"><i style="font-size: 20em;" class='fas fa-folder'></i></div-->
-        <!--div class="muro-1"><p class="habilidad">JavaScript</p></div-->
         <div class="skills">
             <h2 class="titulo">Skills</h2>
+            <div></div>
+            <p>Full Stack Developer</p>
         </div>
    
-            <p class="titulo">HTML</p>
-            <p class="titulo">CSS</p>
-            <p class="titulo">JavaScript Full Stack</p>
-            <p class="titulo">Java Full Stack</p>
-            <p class="titulo">PHP</p>
-            <p class="titulo">SQL</p>
-            <p class="titulo">JSON</p>
-            <p class="titulo">MongoDB</p>
-            <p class="titulo">Fetch y AJAX</p>
-            <p class="titulo">ARIA</p>
-            <p class="titulo">SVG</p>
-            <p class="titulo">Apache NetBeans</p>
-      
+        <p class="titulo" onmouseover="Habilidades.mostrar('html')">HTML</p>
+        <p class="titulo" onmouseover="Habilidades.mostrar('css')">CSS</p>
+        <p class="titulo" onmouseover="Habilidades.mostrar('js')">JavaScript Full Stack</p>
+        <p class="titulo" onmouseover="Habilidades.mostrar('java')">Java Full Stack</p>
+        <p class="titulo" onmouseover="Habilidades.mostrar('php')">PHP</p>
+        <p class="titulo" onmouseover="Habilidades.mostrar('sql')">SQL</p>
+        <p class="titulo" onmouseover="Habilidades.mostrar('json')">JSON</p>
+        <p class="titulo" onmouseover="Habilidades.mostrar('nosql')">MongoDB</p>
+        <p class="titulo" onmouseover="Habilidades.mostrar('fetch')">Fetch y AJAX</p>
+        <p class="titulo" onmouseover="Habilidades.mostrar('aria')">ARIA</p>
+        <p class="titulo" onmouseover="Habilidades.mostrar('svg')">SVG</p>
+        <p class="titulo" onmouseover="Habilidades.mostrar('netbeans')">Apache NetBeans</p>
     </main>
-    <section class="nivel">
-        <svg width="500" height="400">
-            <path d="M 0 350 l 100 -200" stroke="red" stroke-width="3" fill="none" />
-            <path d="M 100 150 q 50 -100 100 0" stroke="blue" stroke-width="5" fill="none" />
-            <path d="M 200 150 q 50 100 100 0" stroke="blue" stroke-width="5" fill="none" />
-            <path d="M 300 150 l 100 -200" stroke="red" stroke-width="3" fill="none" />
+    <section class="niveles">
+        <svg width="500" height="350">
+            <path d="M 0 350 l 100 -200 q 50 -100 100 0 q 50 100 100 0 l 100 -200" stroke="white" stroke-width="3" fill="none" />
             <!-- Mark relevant points -->
             <g stroke="black" stroke-width="3" fill="white">
-            <circle id="pointA" cx="90" cy="350" r="6" />
-            <circle id="pointB" cx="400" cy="150" r="6" />
-            <circle id="pointC" cx="400" cy="350" r="6" />
+                <circle id="pointA" cx="90" cy="300" r="6" class="nivel html" />
+                <circle id="pointB" cx="400" cy="100" r="6" class="nivel css" />
+                <circle id="pointC" cx="400" cy="300" r="6" class="nivel js"/>
+                <circle id="pointA" cx="90" cy="300" r="6" class="nivel java" />
+                <circle id="pointB" cx="400" cy="100" r="6" class="nivel php" />
+                <circle id="pointC" cx="400" cy="300" r="6" class="nivel sql"/>
+                <circle id="pointA" cx="90" cy="300" r="6" class="nivel json" />
+                <circle id="pointB" cx="400" cy="100" r="6" class="nivel nosql" />
+                <circle id="pointC" cx="400" cy="300" r="6" class="nivel fetch"/>
+                <circle id="pointA" cx="90" cy="300" r="6" class="nivel aria" />
+                <circle id="pointB" cx="400" cy="100" r="6" class="nivel svg" />
+                <circle id="pointC" cx="400" cy="300" r="6" class="nivel netbeans"/>
             </g>
             <!-- Label the points -->
-            <!--g font-size="20" font-family="sans-serif" fill="white" stroke="none" text-anchor="middle">
-            <text x="100" y="350" dx="-30">HTML</text>
-            <text x="400" y="150" dy="-10">CSS</text>
-            <text x="400" y="350" dx="30">JavaScript</text>
-            </g-->
+            <g font-size="10" font-family="sans-serif" fill="white" stroke="none" text-anchor="middle">
+                <text x="100" y="300" dx="-30" class="nivel html">HTML</text>
+                <text x="400" y="100" dy="-10" class="nivel css">CSS</text>
+                <text x="400" y="300" dx="30" class="nivel js">JavaScript</text>
+                <text x="100" y="300" dx="-30" class="nivel java">Java</text>
+                <text x="400" y="100" dy="-10" class="nivel php">PHP</text>
+                <text x="400" y="300" dx="30" class="nivel sql">SQL</text>
+                <text x="100" y="300" dx="-30" class="nivel json">JSON</text>
+                <text x="400" y="100" dy="-10" class="nivel nosql">MongoDB</text>
+                <text x="400" y="300" dx="30" class="nivel fetch">Fetch y AJAX</text>
+                <text x="100" y="300" dx="-30" class="nivel aria">ARIA</text>
+                <text x="400" y="100" dy="-10" class="nivel svg">svg</text>
+                <text x="400" y="300" dx="30" class="nivel netbeans">Apache NetBeans</text>
+            </g>
             Sorry, your browser does not support inline SVG.
         </svg>
     </section>
@@ -123,5 +137,6 @@ footer
     </footer>
 </section>
 </section>
+<script src="l/i/index.js"></script>
 </body>
 </html>
