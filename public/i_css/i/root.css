@@ -18,17 +18,21 @@ body {
     overflow-x: hidden !important;
     /*background: red;*/
 }
-a { text-decoration: none; }
+a { text-decoration: none; outline: none; }
 a, 
 button, 
 select { 
-    cursor: pointer; 
+    cursor: pointer;
 }
 label { font-weight: bold; }
+button,
 input,
-textArea { 
+textArea, 
+select { 
+    border: none;
     outline: none; 
 }
+input:disabled { cursor: not-allowed; }
 .titulo { transform: scaleY(1.7); letter-spacing: -0.08em; }
  /*
     https://www.w3schools.com/cssref/tryit.asp?filename=trycss_func_cubic-bezier

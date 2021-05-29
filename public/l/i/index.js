@@ -5,7 +5,8 @@ var i;
 class Habilidades {
     static
     mostrar(habilidad) {
-        const mostrar = document.querySelectorAll('.' + habilidad);
+        const mostrar   = document.querySelectorAll('.' + habilidad);
+//        const mirar     = document.querySelectorAll('#' + habilidad);
         
         let l = nivel.length;
         for (i = 0; i < l; i++) {
