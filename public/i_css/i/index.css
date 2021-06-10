@@ -236,7 +236,7 @@ body {
     stroke: var(--n-color);
     background-color: var(--n-color);
 }*/
-/* Article
+/* Desarrollos
 --------------------------------------------------------------------------------*/
 .n-grid > .area-3 > section {
     display: flex;
@@ -246,7 +246,57 @@ body {
 }
 .n-grid > .area-3 > section > article {
     width: 300px;
-    height: 100px;
     border-radius: 1em;
-    box-shadow: var(--n-sombra);
+    padding: 1.50em 0em 1.50em 1.50em;
+    box-shadow: var(--n-sombra-de-texto-tres);
+}
+.n-grid > .area-3 > section > article > * {
+    margin: 0;
+}
+.n-grid > .area-3 > section > article > div {
+    position: relative;
+}
+.n-grid > .area-3 > section > article > div > h4 {
+    position: relative;
+    color: var(--n-color);
+    font-size: 0.80em;
+    margin: 0;
+    user-select: none;
+}
+.n-grid > .area-3 > section > article > div > .cubrir {
+    position: absolute;
+    bottom: 1.20em;
+    overflow: hidden;
+    height: 0;
+}
+.n-grid > .area-3 > section > article > div > .cubrir > .con {
+    color: var(--n-color);
+    font-size: 0.70em;
+}
+.n-grid > .area-3 > section > article > div:hover 
+.cubrir {
+    animation: cubrir-desarrollo 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
+@keyframes cubrir-desarrollo {
+    from   { 
+        overflow: visible; opacity: 0; 
+    } to { 
+        overflow: visible; opacity: 1;
+    }
+}
+
+.n-grid > .area-3 > section > article > div:hover
+.enlace { 
+    animation: enlace-desarrollo 1s forwards; 
+}
+@keyframes enlace-desarrollo {
+    from { 
+        opacity: 1;  
+    } to { 
+        opacity: 0;
+    }
+}
+.n-grid > .area-3 > section > article > p {
+    font-size: 0.60em;
 }

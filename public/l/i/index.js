@@ -18,3 +18,10 @@ class Habilidades {
         }
     }
 }
+/* titulo que se hace humo
+--------------------------------------------------------------------------------*/
+const h1 = document.querySelector('.enlace');
+
+h1.addEventListener('mouseover', function() {
+    h1.classList.add('active');
+});
