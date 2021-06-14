@@ -245,7 +245,7 @@ body {
     padding: 1.50em 3em 1.50em 3em;
 }
 .n-grid > .area-3 > section > article {
-    width: 300px;
+    width: 150px;
     border-radius: 1em;
     padding: 1.50em 0em 1.50em 1.50em;
     box-shadow: var(--n-sombra-de-texto-tres);
@@ -265,11 +265,17 @@ body {
 }
 .n-grid > .area-3 > section > article > div > .cubrir {
     position: absolute;
-    bottom: 1.20em;
+    bottom: 2.10em;
     overflow: hidden;
     height: 0;
 }
-.n-grid > .area-3 > section > article > div > .cubrir > .con {
+.n-grid > .area-3 > section > article > div > .cubrir > p {
+    white-space: nowrap;
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.n-grid > .area-3 > section > article > div > .cubrir > p > .con {
     color: var(--n-color);
     font-size: 0.70em;
 }
